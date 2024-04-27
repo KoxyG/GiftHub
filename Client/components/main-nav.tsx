@@ -18,7 +18,7 @@ export function MainNav({ items }: MainNavProps) {
 
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className="flex items-center space-r-2">
+      <Link href="/" className="flex items-center ">
         {/* <Icons.logo className="h-6 w-6" /> */}
         <Image src={`${currentTheme === "light" ? "/images/GiftHub.png" : "/images/GiftHubWhite.png"}`} width={200} height={200} alt="logo" />
          {/* <Image src="/images/GiftHub.png" width={150} height={150} alt="logo" /> */}
