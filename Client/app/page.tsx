@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label"
 import { useContext, useEffect, useState } from "react"
 import { WalletContext } from "@/lib/store"
 import { CovalentClient } from "@covalenthq/client-sdk"
-import { COVALENT_API_KEY } from "@/lib/utils"
+import { COVALENT} from "@/lib/utils"
 import { useRouter } from "next/navigation"
 import { useToast } from "@/components/ui/use-toast"
 
@@ -22,7 +22,7 @@ export default function IndexPage() {
         e.preventDefault();
         setBusy(true);
 
-        const client = new CovalentClient(COVALENT_API_KEY ? COVALENT_API_KEY : "");
+        const client = new CovalentClient(COVALENT ? COVALENT : "");
         try {
             const walletActivityResp =
                 await client.BaseService.getAddressActivity(
