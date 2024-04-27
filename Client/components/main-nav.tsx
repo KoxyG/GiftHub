@@ -22,7 +22,8 @@ export function MainNav({ items }: MainNavProps) {
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center ">
         {/* <Icons.logo className="h-6 w-6" /> */}
-        <Image priority={true} src={`${currentTheme === "light" ? "/images/GiftHub.png" : "/images/GiftHubWhite.png"}`} width={200} height={200} alt="logo" />
+        <h1 className="text-3xl font-bold" >GiftHub</h1>
+        {/* <Image priority={true} src={`${currentTheme === "light" ? "/images/GiftHub.png" : "/images/GiftHubWhite.png"}`} width={200} height={200} alt="logo" /> */}
          {/* <Image src="/images/GiftHub.png" width={150} height={150} alt="logo" /> */}
         
       </Link>
