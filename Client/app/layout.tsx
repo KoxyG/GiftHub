@@ -4,6 +4,7 @@ import "@/styles/globals.css"
 import "@covalenthq/goldrush-kit/styles.css"
 import { Theme } from "@radix-ui/themes"
 
+
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
