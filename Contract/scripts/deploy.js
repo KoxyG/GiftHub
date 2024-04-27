@@ -4,13 +4,13 @@ const { ethers, defender} = require("hardhat");
 
 
 async function main() {
-  // Deploy the MerkleDistributorFactory contract
-  const Merkle = await ethers.getContractFactory("MerkleDistributor");
-  const merkle = await defender.deployContract(Merkle, {unsafeAllowDeployContract: true});
-  const merkleAirdrop = await merkle.waitForDeployment();
-  console.log("Merkle contract deployed to:", merkleAirdrop.getAddress());
+  // Deploy the GiftDistributorFactory contract
+  const Gift = await ethers.getContractFactory("GiftDistributor");
+  const gift = await defender.deployContract(Gift, {unsafeAllowDeployContract: true});
+  const giftAirdrop = await gift.waitForDeployment();
+  console.log("Gift contract deployed to:", giftAirdrop.getAddress());
 
-  const Factory = await ethers.getContractFactory("MerkleDistributorFactory");
+  const Factory = await ethers.getContractFactory("GiftDistributorFactory");
   // const factory = await Factory.deploy();
   const factory = await defender.deployContract(Factory);
   // await factory.deployed();

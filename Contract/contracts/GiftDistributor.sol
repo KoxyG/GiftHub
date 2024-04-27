@@ -8,9 +8,9 @@ import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
 error InvalidProof();
 
-contract MerkleDistributor is Initializable, ERC1155("") {
+contract GiftDistributor is Initializable, ERC1155("") {
    
-    bytes32 public merkleRoot;
+    bytes32 public giftRoot;
     uint256 public dropAmount;
    
     
@@ -27,18 +27,18 @@ contract MerkleDistributor is Initializable, ERC1155("") {
    
 
     
-    function initialize (bytes32 merkleRoot_, uint256 dropAmount_) public {
-        merkleRoot = merkleRoot_;
+    function initialize (bytes32 giftRoot_, uint256 dropAmount_) public {
+        giftRoot = giftRoot_;
         dropAmount = dropAmount_;
     }
 
 
-    function claim(bytes32[] calldata merkleProof, uint256 id)
+    function claim(bytes32[] calldata giftProof, uint256 id)
         public
     {
         require(!addressesClaimed[msg.sender], "Already claimed");
         bytes32 node = keccak256(abi.encodePacked(msg.sender));
-        require(MerkleProof.verify(merkleProof, merkleRoot, node), "Not Whitelisted");
+        require(MerkleProof.verify(giftProof, giftRoot, node), "Not Whitelisted");
 
         addressesClaimed[msg.sender] =  true;
         mint(msg.sender, id, dropAmount);

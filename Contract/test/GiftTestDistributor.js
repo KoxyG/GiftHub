@@ -7,9 +7,9 @@ const { ethers } = require("hardhat");
 
 
 //deployment and first interaction.
-describe("MerkleDistributor", () => {
+describe("GiftDistributor", () => {
   
-  let merkleTree;
+  let giftTree;
   let distributor;
   let distributorAddress
   let whitelistAddress
@@ -30,26 +30,26 @@ describe("MerkleDistributor", () => {
     })
 
     // generate a tree
-    merkleTree = new MerkleTree(leaves, keccak256, {  hashLeaves: true, sortPairs: true });
+    giftTree = new MerkleTree(leaves, keccak256, {  hashLeaves: true, sortPairs: true });
     
     // generate a root 
-    const merkleRoot = merkleTree.getHexRoot();
+    const giftRoot = giftTree.getHexRoot();
    
 
-    // Deploy MerkleDistributor
-    const merkleDistributor = await ethers.getContractFactory("MerkleDistributor")
-    const Distributor = await merkleDistributor.deploy();
+    // Deploy GiftDistributor
+    const giftDistributor = await ethers.getContractFactory("GiftDistributor")
+    const Distributor = await giftDistributor.deploy();
     await Distributor.waitForDeployment();
 
     // Deploy factory contract
-    const Factory = await ethers.getContractFactory("MerkleDistributorFactory")
+    const Factory = await ethers.getContractFactory("GiftDistributorFactory")
     const contract = await Factory.deploy();
     await contract.waitForDeployment();
 
 
     
     // interact with the proxy clone contract and set the merkle root and dropAmount
-    distributor = await contract.deployDistributor(merkleRoot, 500);
+    distributor = await contract.deployDistributor(giftRoot, 500);
     await distributor;
     
     // get address of deployed polls
@@ -83,12 +83,12 @@ describe("MerkleDistributor", () => {
     it("allows successful claim with claim events and prevents duplicate claim", async () => {
 
      // Create an instance of the distributor contract
-     const deployedDistributor = await ethers.getContractAt("MerkleDistributor", distributorAddress);
+     const deployedDistributor = await ethers.getContractAt("GiftDistributor", distributorAddress);
 
       // Generate proof for signer1
       const leaf = keccak256(signer1.address);
       
-      const proof1 = merkleTree.getHexProof(leaf);
+      const proof1 = giftTree.getHexProof(leaf);
 
       
       
@@ -104,12 +104,12 @@ describe("MerkleDistributor", () => {
     // Second Test
     it("prevents claim with invalid address/proof", async () => {
       // Create an instance of the distributor contract
-      const deployedDistributor = await ethers.getContractAt("MerkleDistributor", distributorAddress);
+      const deployedDistributor = await ethers.getContractAt("GiftDistributor", distributorAddress);
       
       const leaf = keccak256("0x0000000000000000000000000000000000000000");
 
         // Generate an invalid proof
-      const invalidProof = merkleTree.getHexProof(leaf);
+      const invalidProof = giftTree.getHexProof(leaf);
 
       // Attempt to claim with invalid proof, should fail
       await expect(
