@@ -24,8 +24,8 @@ export default function IndexPage() {
 
             <div className="py-[40px]">
                 <h1 className="text-center text-3xl py-[40px] font-bold leading-tight tracking-tighter">About GiftHub</h1>
-                <h3 className="text-center text-lg">GiftHub aims to revolutionize token gifting by offering a <br /> seamless platform for distributing tokens to a wider audience</h3>
-                <h3 className="py-[40px] text-center text-lg">Our mission is to simplify the process and encourage <br /> community engagement in the cryptocurrency space</h3>
+                <h3 className="text-center text-lg text-muted-foreground">GiftHub aims to revolutionize token gifting by offering a <br /> seamless platform for distributing tokens to a wider audience</h3>
+                <h3 className="py-[40px] text-center text-lg text-muted-foreground">Our mission is to simplify the process and encourage <br /> community engagement in the cryptocurrency space</h3>
             </div>
             </div>
             <div>
