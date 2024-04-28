@@ -1,11 +1,15 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
+
+import dotenv from 'dotenv';
+dotenv.config();
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const COVALENT_API_KEY = "cqt_rQh8KDbwVkJGKbmbpVXtkYPxpvpb"
+export const COVALENT_API_KEY = process.env.NEXT_PUBLIC_COVALENT_API_KEY;
 
 export const COLORS = {
   "slate": "#64748b",
