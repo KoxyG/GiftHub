@@ -50,22 +50,20 @@ export default function TransactionPage() {
         <section className="container flex flex-col justify-center gap-6 md:py-10 h-[calc(100vh-150px)] items-center ">
             <Flex direction="column" gap="4">
                 <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-                Send tokens to multiple addresses
+                Analyze interactions within your GiftHub address
                 </h1>
                 <p className="max-w-[700px] text-lg text-muted-foreground">
-                GiftHub gifts tokens or NFTs to multiple recipients in just three clicks
-
-Explore dApps
+                Track responses to your token distributions and assess the level of engagement from your audience.
 
                 </p>
                 <form onSubmit={handleResolvedAddress}>
                     <Flex direction="column" gap="2">
-                        <Label htmlFor="email">Wallet Address</Label>
-                        <Input type="input" id="address" placeholder="Wallet Address" value={address} onChange={(e) => {
+                        <Label htmlFor="email">GiftHub Address</Label>
+                        <Input type="input" id="address" placeholder="GiftHub Address" value={address} onChange={(e) => {
                             setAddress(e.target.value)
                         }} />
                         <div>
-                            <Button disabled={address.length === 0 || busy} type="submit">
+                            <Button className="bg-green-500" disabled={address.length === 0 || busy} type="submit">
                                 Continue
                             </Button>
                         </div>
