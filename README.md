@@ -50,16 +50,16 @@ GIFTHUB leverages the Scroll blockchain for secure and efficient token transfers
 GIFTHUB adheres to the principles of decentralization, transparency, and user empowerment. By leveraging decentralized technologies, GIFTHUB enables community-driven token distributions and fosters collaboration within decentralized ecosystems.
 
 ## Project Links
-- [Pitchdeck]
+- [Pitchdeck]()
 - [ScreenPal]()
-- [Live Link]()
+- [Live Link](https://gift-hub.vercel.app/)
 - [GiftHub Distributor Contract](https://sepolia.scrollscan.dev/address/0xf8b9EEf08768Ec9713730dFc8067F4D027D3f2bE)
 - [GiftHub factory Contract](https://sepolia.scrollscan.dev/address/0x92426b92c6573d13F9E6Bbf67605dc671734630B)
 - [Telegram Community/Bot](https://t.me/+U9eqMVyhEYY2MWZk)
 
 ## Meet the Team
-- Project Manager: [Your Name]
-- Engineer: [Progress Ochuko (Koxy)]
+- Project Manager: Your Name
+- Engineer: Progress Ochuko (Koxy)
 
 
 ## Contract Test
