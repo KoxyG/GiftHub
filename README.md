@@ -13,6 +13,7 @@
 8. [Web3 Principles](#web3-principles)
 9. [Project Links](#project-links)
 10. [Meet the Team](#meet-the-team)
+11. [Smart contract Test](#Contract-Test)
 
 ## Project Overview
 GIFTHUB is a decentralized platform designed to simplify the distribution of tokens to community members. Built on the Scroll blockchain, GIFTHUB enables community leaders to easily distribute tokens as rewards or incentives to their members. Through an intuitive interface, community leaders can initiate token distributions, track engagement, and foster collaboration within their communities.
@@ -51,8 +52,8 @@ GIFTHUB adheres to the principles of decentralization, transparency, and user em
 ## Project Links
 - [Pitchdeck]
 - [ScreenPal]()
-- [Live Link]
-- - [GiftHub Distributor Contract](https://sepolia.scrollscan.dev/address/0xf8b9EEf08768Ec9713730dFc8067F4D027D3f2bE)
+- [Live Link]()
+- [GiftHub Distributor Contract](https://sepolia.scrollscan.dev/address/0xf8b9EEf08768Ec9713730dFc8067F4D027D3f2bE)
 - [GiftHub factory Contract](https://sepolia.scrollscan.dev/address/0x92426b92c6573d13F9E6Bbf67605dc671734630B)
 - [Telegram Community/Bot](https://t.me/+U9eqMVyhEYY2MWZk)
 
@@ -61,14 +62,6 @@ GIFTHUB adheres to the principles of decentralization, transparency, and user em
 - Engineer: [Progress Ochuko (Koxy)]
 
 
+## Contract Test
 ![Hub contract Test](./Contract/image/Gifthub.png)
-
-
-
-
-
-### VERIFIED CONTRACT
-
-### License
-- This project is licensed under the [MIT] License - see the LICENSE.md file for details
 
