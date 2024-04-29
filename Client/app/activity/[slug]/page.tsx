@@ -25,7 +25,7 @@ export default function Activity({ params }: { params: { slug: string } }) {
           Chain Selection
         </h1>
         <p className="max-w-[700px] text-lg text-muted-foreground">
-          Please select chains to view your wallet.
+          Please select chains to view your GiftHub history.
       </p>
       <AddressActivityListView
         address={params.slug}

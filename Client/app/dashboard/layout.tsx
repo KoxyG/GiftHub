@@ -38,22 +38,22 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           >
             Token balances
           </TabsTrigger>
-          <TabsTrigger
+          {/* <TabsTrigger
             value="/dashboard/nft/"
             onClick={() => {
               handleTabSwitch("nft")
             }}
           >
             NFTs
-          </TabsTrigger>
-          <TabsTrigger
+          </TabsTrigger> */}
+          {/* <TabsTrigger
             value="/dashboard/settings/"
             onClick={() => {
               handleTabSwitch("settings")
             }}
           >
             Settings
-          </TabsTrigger>
+          </TabsTrigger> */}
         </TabsList>
       </Tabs>
       {children}

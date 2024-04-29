@@ -18,7 +18,7 @@ export default function IndexPage() {
                 <p className="px-[20px] text-center py-3 text-lg text-muted-foreground">you can easily distribute tokens to multiple addresses in just a few clicks.</p>
                
             </Flex>
-            <Link href="/">
+            <Link href="/Create">
                 <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"> Gift Now</button>
             </Link>
 
