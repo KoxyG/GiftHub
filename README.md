@@ -1,5 +1,10 @@
 # GiftHub
 
+- GIFTHUB is a decentralized platform on the Scroll blockchain, simplifying token distribution within communities. Leveraging Scroll's zk-rollup technology, it offers a seamless, cost-effective solution.
+- Community leaders create accounts, specify tokens and recipients, generating transfer links. Recipients claim tokens via wallet connection and verification.
+- Distribution methods include random selection or first-come-first-serve. GIFTHUB offers analytics for tracking responses and community engagement.
+- With OpenZeppelin Defender for security and Covalent's Gold Rush kit UI for user experience, GIFTHUB empowers community leaders to engage and incentivize effectively on the Scroll blockchain, fostering collaboration and growth.
+
 
 ![Hub contract Test](./Contract/image/Gifthub.png)
 
