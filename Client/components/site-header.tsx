@@ -14,7 +14,7 @@ export function SiteHeader() {
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
             <Link
-              href={"https://t.me/GiiftHub_bot"}
+              href={"https://t.me/+U9eqMVyhEYY2MWZk"}
               target="_blank"
               rel="noreferrer"
             >
