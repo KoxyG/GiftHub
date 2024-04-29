@@ -16,7 +16,8 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 // Listen for any kind of message. There are different kinds of
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
+  console.log(chatId)
  
 
-  bot.sendMessage(chatId, `New Bounty Created: ${msg.text}`);
+  bot.sendMessage(chatId, `New Gift Package Created: ${msg.text}`);
 });
