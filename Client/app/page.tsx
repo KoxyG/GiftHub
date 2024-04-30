@@ -14,8 +14,7 @@ export default function IndexPage() {
             GiftHub!, your go-to platform for hassle-free token gifting
           </h1>
           <p className="px-[20px] text-center py-3 text-lg text-muted-foreground">
-            you can easily distribute tokens to multiple addresses in just a few
-            clicks.
+            GiftHub is a decentralised platform designed to simplify <br /> the distribution of tokens to community members
           </p>
         </Flex>
         <Link href="/Create">
@@ -30,13 +29,13 @@ export default function IndexPage() {
             About GiftHub
           </h1>
           <h3 className="text-center text-lg text-muted-foreground">
-            GiftHub aims to revolutionize token gifting by offering a <br />{" "}
-            seamless platform for distributing tokens to a wider audience
+            GIFTHUB offers a seamless and cost-effective solution for <br /> token distribution within decentralised communities.
+
           </h3>
-          <h3 className="py-[40px] text-center text-lg text-muted-foreground">
-            Our mission is to simplify the process and encourage <br />{" "}
-            community engagement in the cryptocurrency space
+          <h3 className="pt-[40px] text-center text-lg text-muted-foreground">
+           Community leaders can create an account on GIFTHUB, <br /> specify the token, amount, and the number of recipients they <br /> want to give tokens to, and generate a transfer link.
           </h3>
+          <h3 className="py-[40px] text-center text-lg text-muted-foreground">Our mission is to simplify the process and encourage <br /> community engagement in the cryptocurrency space</h3>
         </div>
       </div>
       <div>
@@ -45,8 +44,7 @@ export default function IndexPage() {
             Explore Your Activity
           </h1>
           <p className="text-center text-lg text-muted-foreground">
-            Your transaction history provides a comprehensive overview of <br />{" "}
-            all activities associated with your GiftHub address.{" "}
+            GIFTHUB provides analytics tools, allowing users to track <br /> responses to token distributions.
           </p>
           <p className="pb-[40px] text-center text-lg text-muted-foreground">
             Whether it's tracking token distributions or monitoring <br />{" "}
