@@ -13,7 +13,7 @@ export default function IndexPage() {
           <h1 className="px-[20px] pt-[60px] text-4xl font-extrabold leading-tight tracking-tighter md:text-4xl">
             GiftHub!, your go-to platform for hassle-free token gifting
           </h1>
-          <p className="px-[20px] text-center py-3 text-lg text-muted-foreground">
+          <p className="px-[20px] text-center pt-3 pb-[70px] text-lg text-muted-foreground">
             GiftHub is a decentralised platform designed to simplify <br /> the distribution of tokens to community members
           </p>
         </Flex>
@@ -24,7 +24,7 @@ export default function IndexPage() {
           </button>
         </Link>
 
-        <div className="py-[40px]">
+        <div className="py-[100px]">
           <h1 className="text-center text-3xl py-[40px] font-bold leading-tight tracking-tighter">
             About GiftHub
           </h1>
@@ -38,7 +38,7 @@ export default function IndexPage() {
           <h3 className="py-[40px] text-center text-lg text-muted-foreground">Our mission is to simplify the process and encourage <br /> community engagement in the cryptocurrency space</h3>
         </div>
       </div>
-      <div>
+      <div className="py-[40px]">
         <div className="flex flex-col  justify-center gap-6 items-center ">
           <h1 className="text-center text-3xl py-[40px] font-bold leading-tight tracking-tighter">
             Explore Your Activity
@@ -60,11 +60,11 @@ export default function IndexPage() {
         </div>
       </div>
       <div className="py-[100px]">
-        <div className="text-center py-[40px] ">
+        <div className="text-center py-[50px] ">
           <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter">
             How It Works: <br />
           </h1>
-          <span>(PROJECT OWNERS/COMMUNITY LEADERS) </span>
+          <span className="text-[12px] sm:text-[15px]">(PROJECT OWNERS/COMMUNITY LEADERS) </span>
         </div>
         <div className="text-center grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="text-center  grid ">
@@ -125,7 +125,7 @@ export default function IndexPage() {
           <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter">
             How It Works: <br />
           </h1>
-          <span>(for Community Members)</span>
+          <span className="text-[12px] sm:text-[15px]">(for Community Members)</span>
         </div>
         <div className="text-center grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="text-center  grid ">
