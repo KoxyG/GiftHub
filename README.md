@@ -58,7 +58,7 @@ GIFTHUB adheres to the principles of decentralization, transparency, and user em
 - [Telegram Community/Bot](https://t.me/+U9eqMVyhEYY2MWZk)
 
 ## Meet the Team
-- Project Manager: Your Name
+- Project Manager: Motunrayo Kareem
 - Engineer: Progress Ochuko (Koxy)
 
 
